@@ -1,0 +1,179 @@
+/* Default */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Akatab', sans-serif;
+}
+:root{
+    --transparent_black_bg_color: rgba(0, 0, 0, 0.549);
+}
+body{
+    background:  url("bg.jpg") no-repeat center center/cover fixed;
+    backdrop-filter: brightness(0.55);
+}
+
+/* navbar */
+nav{
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+}
+nav img{
+    height: inherit;
+    width: inherit;
+    margin-top: 4px;
+}
+
+
+/* main */
+main{
+    height: max-content;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Sections */
+.container{
+    margin: 5px 0px 0px 25px;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.container-2{
+    margin-top: 40px;
+}
+.head{
+    color: white;
+    font-weight: 600;
+    background: var(--transparent_black_bg_color);
+    padding: 10px;
+    font-size: 12px;
+}
+
+/* Cards General CSS */
+.content{
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 0px 0px 30px;
+    flex-wrap: wrap;
+    height: fit-content;
+}
+.movie{
+    border-radius: 20px;
+    background: url("/Movie-Posters/aou.jpg") center center/cover no-repeat;
+    height: 350px;
+    width: 220px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 15px;
+    transition: transform 140ms ease-in-out;
+}
+.movie div{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100px;
+    width: fit-content;
+    background: var(--transparent_black_bg_color);
+    color: white;
+    padding: 10px;
+    padding-bottom: 20px;
+    border-radius: 0px 0px 20px 20px ;
+    transition: height 120ms ease-in;
+    
+}
+.title{
+    font-weight: 300;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.description{
+    display: block;
+    overflow-y: hidden;
+    font-size: 14px;
+}
+
+/* Cards Individual CSS */
+/* For top grossing section */
+#movie1{
+    background: url("/Movie-Posters/endgame.jpg") center center/cover no-repeat;
+}
+#movie2{
+    background: url("/Movie-Posters/infinity.jpg") center center/cover no-repeat;
+}
+#movie3{
+    background: url("/Movie-Posters/no_way.jpg") center center/cover no-repeat;
+}
+#movie4{
+    background: url("/Movie-Posters/avengers.jpg") center center/cover no-repeat;
+}
+#movie5{
+    background: url("/Movie-Posters/aou.jpg") center center/cover no-repeat;
+}
+#movie6{
+    background: url("/Movie-Posters/BP.jpg") center center/cover no-repeat;
+}
+/* For Most Popular Section */
+#movie-b-1{
+    background: url("/Movie-Posters/im-1.jpg") center center/cover no-repeat;
+}
+#movie-b-2{
+    background: url("/Movie-Posters/shang-chi.jpg") center center/cover no-repeat;
+}
+#movie-b-3{
+    background: url("/Movie-Posters/civil.jpg") center center/cover no-repeat;
+}
+#movie-b-4{
+    background: url("/Movie-Posters/ds.jpg") center center/cover no-repeat;
+}
+#movie-b-5{
+    background: url("/Movie-Posters/ant.jpg") center center/cover no-repeat;
+}
+#movie-b-6{
+    background: url("/Movie-Posters/ragnarok.jpg") center center/cover no-repeat;
+}
+
+/* hover effect */
+.movie div:hover{
+    height: inherit;
+    border-radius: 20px;
+}
+.movie:hover{
+    transform: scale(120%);
+}
+
+/* Footer */
+footer{
+    background: var(--transparent_black_bg_color);
+    margin-top: 15px;
+    height: 8vh;
+    display: flex;
+}
+footer p{
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: auto;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(194, 187, 187);
+}
+
+/* media queries */
+@media screen and (max-width:1000px){
+    body{
+        background: rgb(255 38 38);
+        overflow-x: hidden;
+    }
+    nav img{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .content{
+        justify-content: space-evenly;
+    }
+}
