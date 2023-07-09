@@ -64,7 +64,7 @@ main{
 }
 .movie{
     border-radius: 20px;
-    background: url("/Movie-Posters/aou.jpg") center center/cover no-repeat;
+    background: url("aou.jpg") center center/cover no-repeat;
     height: 350px;
     width: 220px;
     margin-right: 40px;
@@ -102,41 +102,41 @@ main{
 /* Cards Individual CSS */
 /* For top grossing section */
 #movie1{
-    background: url("/Movie-Posters/endgame.jpg") center center/cover no-repeat;
+    background: url("endgame.jpg") center center/cover no-repeat;
 }
 #movie2{
-    background: url("/Movie-Posters/infinity.jpg") center center/cover no-repeat;
+    background: url("infinity.jpg") center center/cover no-repeat;
 }
 #movie3{
-    background: url("/Movie-Posters/no_way.jpg") center center/cover no-repeat;
+    background: url("no_way.jpg") center center/cover no-repeat;
 }
 #movie4{
-    background: url("/Movie-Posters/avengers.jpg") center center/cover no-repeat;
+    background: url("avengers.jpg") center center/cover no-repeat;
 }
 #movie5{
-    background: url("/Movie-Posters/aou.jpg") center center/cover no-repeat;
+    background: url("aou.jpg") center center/cover no-repeat;
 }
 #movie6{
-    background: url("/Movie-Posters/BP.jpg") center center/cover no-repeat;
+    background: url("BP.jpg") center center/cover no-repeat;
 }
 /* For Most Popular Section */
 #movie-b-1{
-    background: url("/Movie-Posters/im-1.jpg") center center/cover no-repeat;
+    background: url("im-1.jpg") center center/cover no-repeat;
 }
 #movie-b-2{
-    background: url("/Movie-Posters/shang-chi.jpg") center center/cover no-repeat;
+    background: url("shang-chi.jpg") center center/cover no-repeat;
 }
 #movie-b-3{
-    background: url("/Movie-Posters/civil.jpg") center center/cover no-repeat;
+    background: url("civil.jpg") center center/cover no-repeat;
 }
 #movie-b-4{
-    background: url("/Movie-Posters/ds.jpg") center center/cover no-repeat;
+    background: url("ds.jpg") center center/cover no-repeat;
 }
 #movie-b-5{
-    background: url("/Movie-Posters/ant.jpg") center center/cover no-repeat;
+    background: url("ant.jpg") center center/cover no-repeat;
 }
 #movie-b-6{
-    background: url("/Movie-Posters/ragnarok.jpg") center center/cover no-repeat;
+    background: url("ragnarok.jpg") center center/cover no-repeat;
 }
 
 /* hover effect */
