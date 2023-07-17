@@ -11,6 +11,7 @@
 body{
     background:  url("bg.jpg") no-repeat center center/cover fixed;
     backdrop-filter: brightness(0.55);
+    overflow-x: hidden;
 }
 
 /* navbar */
@@ -38,13 +39,14 @@ main{
 /* Sections */
 .container{
     margin: 5px 0px 0px 25px;
-    min-width: 500px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
 .container-2{
     margin-top: 40px;
+    width: 100%;
 }
 .head{
     color: white;
@@ -64,9 +66,9 @@ main{
 }
 .movie{
     border-radius: 20px;
-    background: url("aou.jpg") center center/cover no-repeat;
-    height: 350px;
-    width: 220px;
+    background: url("/Movie-Posters/aou.jpg") center center/cover no-repeat;
+    height: 20em;
+    width: 12em;
     margin-right: 40px;
     display: flex;
     flex-direction: column;
@@ -102,41 +104,41 @@ main{
 /* Cards Individual CSS */
 /* For top grossing section */
 #movie1{
-    background: url("endgame.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/endgame.jpg") center center/cover no-repeat;
 }
 #movie2{
-    background: url("infinity.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/infinity.jpg") center center/cover no-repeat;
 }
 #movie3{
-    background: url("no_way.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/no_way.jpg") center center/cover no-repeat;
 }
 #movie4{
-    background: url("avengers.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/avengers.jpg") center center/cover no-repeat;
 }
 #movie5{
-    background: url("aou.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/aou.jpg") center center/cover no-repeat;
 }
 #movie6{
-    background: url("BP.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/BP.jpg") center center/cover no-repeat;
 }
 /* For Most Popular Section */
 #movie-b-1{
-    background: url("im-1.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/im-1.jpg") center center/cover no-repeat;
 }
 #movie-b-2{
-    background: url("shang-chi.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/shang-chi.jpg") center center/cover no-repeat;
 }
 #movie-b-3{
-    background: url("civil.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/civil.jpg") center center/cover no-repeat;
 }
 #movie-b-4{
-    background: url("ds.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/ds.jpg") center center/cover no-repeat;
 }
 #movie-b-5{
-    background: url("ant.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/ant.jpg") center center/cover no-repeat;
 }
 #movie-b-6{
-    background: url("ragnarok.jpg") center center/cover no-repeat;
+    background: url("/Movie-Posters/ragnarok.jpg") center center/cover no-repeat;
 }
 
 /* hover effect */
@@ -165,15 +167,15 @@ footer p{
 }
 
 /* media queries */
-@media screen and (max-width:1000px){
-    body{
-        background: rgb(255 38 38);
-        overflow-x: hidden;
-    }
-    nav img{
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+@media screen and (max-width: 500px) {
+    .head{
+        text-align: center;
     }
     .content{
-        justify-content: space-evenly;
+        justify-content: center;
+    }
+    footer{
+        text-align: center;
+        position: static;
     }
 }
